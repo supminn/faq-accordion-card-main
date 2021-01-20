@@ -3,6 +3,7 @@ let questions = document.querySelectorAll(".faq-question");
 let answer = document.querySelectorAll(".faq-answer");
 let arrow = document.querySelectorAll(".img-arrow");
 
+answer[1].classList.remove('hidden');
 for(let i=0;i<content.length;i++){
     content[i].addEventListener('click',() => {
         questions[i].classList.toggle('faq-question-active');
